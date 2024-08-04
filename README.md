@@ -10,11 +10,11 @@ The contract has just 2 functions.
 - claimAirdrop: This function permits a user to claim the airdrop he is eligible for the airdrop. An ineligible user is not permitted to claim. A user cannot claim more than once.
 
 ## Getting Started
-```git clone https://github.com/devfola/Meta-Degen.git``` to clone the project. 
+```git clone https://github.com/devpeeter/Avalanche_Subnet``` to clone the project. 
 After cloning the GitHub, do the following to get the code running on your computer.
 
 - visit ```https://docs.avax.network/tooling/cli-guides/install-avalanche-cli``` to install avalanche CLI on your computer
-- When the CLI is installed, type ```avalanche subnet create mySubnet```. Instead of the mySubnet, you can choose your own subnet name.
+- When the CLI is installed, type ```avalanche subnet create mySubnet```. Instead of the mySubnet, you can choose your subnet name.
 - To configure your subnet, reply your terminal with the following answers as the query comes ```avalanche subnet create mySubnet
 Attempted to check if a new version is available, but couldn't find the currently running version information
 Make sure to follow official instructions or automatic updates won't be available for you
@@ -39,7 +39,7 @@ Currency Symbol:  TUTORIAL```. Use this information to set up a network on Metam
 - When you are done with everything, including interacting with the contract, type  ```avalanche network stop ``` to shut the subnet down.
 
 ## Authors
-Rilwan Oyewunmi Oyewunmi
+Peter Fatukasi
 
 ## License
 This project is licensed under the MIT License - see the LICENSE.md file for details
