@@ -1,17 +1,13 @@
-# Vault Exchange
-Vault Exchange is a simple saving contract written in Solidity and deployed on a custom subnet on Avalanche Network.
+# AvalancheAirdrop
+AvalancheAirdrop is a simple saving contract that facilitates the giving of airdrops.
 
 ## Description
-The Vault Exchange is a saving contract that takes ethers from the user, converts it to the contract ERC-20 token worth, and saves it in the contract. The user can transfer the token within the contract, the user can also withdraw the ether equivalent of the token.
+The AvalancheAirdrop smart contract is written in Solidity. It facilitates the sharing of airdrops to eligible users. It does not allow ineligible users to claim the airdrop.
 
-The contract has 6 user-defined functions:
+The contract has just 2 functions.
 
-- depositAndSave(): Allows the user to send ethers with the message. This function converts user ether to the ERC-20 token, usually 1 wei to 5 of the contract token.
-- userBalance(address _user): Allows user to check their ERC-20 balance
-- tokenWorth(address _user): Only the owner can call this function and the owner uses this function to know the ERC-20 token worth of the user Ether before funding the user account with the token.
-- fundUser(address _user): Having gotten the user token worth, the owner uses this function to fund the user account with the token equivalent.
-- userTransferToken(address _otherUser, uint256 _value): Allows user to transfer token to another user.
-- userWithdraws(uint256 _value): Allows user to withdraw ether equivalent of their token.
+- addAirdropees: This function allows the contract owner to add an array of addresses to the eligible users. This function does not allow an address to be saved twice. It also does not allow address zero.
+- claimAirdrop: This function permits a user to claim the airdrop he is eligible for the airdrop. An ineligible user is not permitted to claim. A user cannot claim more than once.
 
 ## Getting Started
 ```git clone https://github.com/devfola/Meta-Degen.git``` to clone the project. 
